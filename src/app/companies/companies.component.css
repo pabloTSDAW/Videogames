@@ -1,0 +1,80 @@
+/*Colocar en todos los componentes de la ruta*/
+.container {
+  margin: 120px auto;
+}
+/*------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+.titulo {
+  text-align: center;
+  color: #54d400;
+  margin-bottom: 20px;
+}
+
+.busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.busqueda input {
+  margin-left: 1%;
+  width: 30%;
+  padding-left: 1%;
+}
+
+.buqueda button {
+  margin-left: 10px;
+}
+
+.busqueda input:hover {
+  border: 2px solid #54d400;
+}
+
+.companias {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+.companias div:hover {
+  transform: scale(1.2);
+}
+
+.companias img {
+  box-shadow: 5px 5px 20px #131313;
+}
+
+.companias h6 {
+  color: #54d400;
+  text-align: center;
+}
+
+.companias img {
+  border: 2px solid #54d400;
+}
+
+.cargar {
+  margin-top: 2%;
+  text-align: center;
+  justify-content: center;
+}
+
+.cargar a:hover {
+  color: #54d400;
+  cursor: pointer;
+}
+
+thead {
+  color: #54d400;
+  background-color: #131313;
+}
+
+.table thead th, .table tbody td {
+  vertical-align: middle;
+}

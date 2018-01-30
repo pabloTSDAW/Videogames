@@ -1,0 +1,75 @@
+/*Colocar en todos los componentes de la ruta*/
+.container {
+  margin: 120px auto;
+}
+/*------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+.titulo {
+  text-align: center;
+  color: #54d400;
+  margin-bottom: 20px;
+}
+
+.busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.busqueda input {
+  margin-left: 1%;
+  width: 30%;
+}
+
+.buqueda button {
+  margin-left: 10px;
+}
+
+.busqueda input:hover {
+  border: 2px solid #54d400;
+}
+
+.personajes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+.personajes div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #131313;
+  box-shadow: 5px 5px 20px #131313;
+}
+
+.personajes div:hover {
+  transform: scale(1.2);
+}
+
+.personajes img {
+}
+
+.personajes h5 {
+  color: #54d400;
+  text-align: center;
+}
+
+.cargar {
+  font-weight: bold;
+  margin-top: 2%;
+  text-align: center;
+  justify-content: center;
+}
+
+.cargar a:hover {
+  color: #54d400;
+  cursor: pointer;
+}

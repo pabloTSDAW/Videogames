@@ -1,0 +1,40 @@
+<div class="fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear" [ngClass]="{claro: estilo == 'light', metal: estilo == 'metal'}">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/home']" style="text-transform: uppercase;"> VIDEOGAMES</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/games']">Games</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/characters']">Characters</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/platforms']">Platforms</a>
+          </li>
+
+          <li class="nav-item">
+            <select name="tema" id="tema" (change)="cambiarEstilo()">
+              <option value="dark" selected="selected">Dark</option>
+              <option value="light">Light</option>
+              <option value="metal">Metal</option>
+            </select>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <ol class="breadcrumb panel">
+    <li class="breadcrumb-item"><a>Home</a></li>
+    <li class="breadcrumb-item active panel">{{ruta}}</li>
+  </ol>
+</div>
